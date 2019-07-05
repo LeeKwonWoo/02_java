@@ -5,7 +5,7 @@ package type.primitive;
  * 내부적으로는 숫자로 저장하는 특징이 있다.
  */
 public class CharTest {
-	public void main(String[] args) {
+	public static void main(String[] args) {
 		// 1. 선언 : 타입이름 변수이름;
 		char input;
 		// 2. 초기화 : 변수이름 = 값;
@@ -22,7 +22,8 @@ public class CharTest {
 		// + 1 하는 산술연산을 하여 값을 증가시키고
 		code += 1;
 		System.out.println("code = " + code);
+
+		// + 1 증가된 정수값을 강제로 문자(char)로 바꾸어 출력
 		System.out.println("(char)code = " + (char)code);
-		
 	}
 }

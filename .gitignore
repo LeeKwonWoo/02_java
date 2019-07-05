@@ -1,4 +1,5 @@
 /.metadata/
+
 # Created by https://www.gitignore.io/api/java,windows,eclipse
 # Edit at https://www.gitignore.io/?templates=java,windows,eclipse
 
@@ -61,7 +62,7 @@ local.properties
 
 ### Eclipse Patch ###
 # Eclipse Core
-.project
+#.project
 
 # JDT-specific (Eclipse Java Development Tools)
 .classpath
