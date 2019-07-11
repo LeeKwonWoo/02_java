@@ -29,6 +29,11 @@ public class ForTest {
 		for (int square = 1; square <= 10; square++) {
 			System.out.printf("%2d X %2d = %3d%n",square,square,square * square);
 		}
+		// 3. 제곱표 출력
+		int[] numbers = {1,2,3,4,5,6,7,8,9,10};
+		for (int num: numbers) {
+			System.out.printf("%2d x %2d = %3d%n",num,num,num*num);
+		}
 		
 	}
 

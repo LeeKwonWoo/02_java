@@ -76,5 +76,14 @@ public class ArraySalaries {
 			System.out.printf("salaries[%d]=%d%n",idx,salaries[idx]);
 		}
 		System.out.println("== for loop 로 입력 ==");
+		
+		// 6. foreach 구문으로 출력
+		int sum = 0;
+		for (int num: salaries) {
+			System.out.println("정수를 입력하세요.");
+			num = scan.nextInt();
+			sum += num;
+		}
+		System.out.println("foreach 구문으로 sum="+sum);
 	}
 }
