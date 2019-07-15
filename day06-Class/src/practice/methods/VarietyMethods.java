@@ -59,7 +59,7 @@ public class VarietyMethods {
 	 * @param month : int
 	 */
 	public void birthYearMonth(int year, int month,String name) {
-		System.out.printf("%s 는 %d 년 %d 월 생입니다.",name,year,month);
+		System.out.printf("%s 는 %d 년 %d 월 생입니다.%n",name,year,month);
 	}
 	
 	
@@ -225,6 +225,17 @@ public class VarietyMethods {
 			System.out.println(x+"+"+y+"="+(x+y));
 		}
 	}
-
+	public double arithmetic (double x, double y, char op) {
+		if (op == '+') {
+			return x+y;
+		} else if (op == '-') {
+			return x-y;
+		} else if (op == '*') {
+			return x*y;
+		} else if (op == '/') {
+			return x/y;
+		}
+		return 0;
+	}
 
 }

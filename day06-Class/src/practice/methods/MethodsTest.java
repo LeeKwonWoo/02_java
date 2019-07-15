@@ -31,6 +31,7 @@ public class MethodsTest {
 		System.out.println("배열의 합은"+methods.sumOfArray(array));
 		System.out.println("배열의 합의 평균은"+methods.avgOfArray(array));
 		methods.adder(1, 2,'+');
+		System.out.println(methods.arithmetic(1.0,1.0,'+')+"입니다.");
 	}
 
 }
