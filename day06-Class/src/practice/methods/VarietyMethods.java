@@ -189,15 +189,15 @@ public class VarietyMethods {
 	 * 그 배열의 각 원소들의 평균을 구하여 리턴하는 메소드
 	 * avgOfArray 를 디자인
 	 * @param numbers : int[] (int 배열)
-	 * @return int[] 배열의 각 원소의 평균 
+	 * @return double 배열의 각 원소의 평균 
 	 */
-	public int avgOfArray(int[] numbers) {
+	public double avgOfArray(int[] numbers) {
 		int sum = 0;
-		int avg = 0;
+		double avg = 0.0;
 		for (int idx = 0; idx < numbers.length; idx++) {
 			sum += numbers[idx];
 		}
-		avg = sum / numbers.length;
+		avg = (double)sum / numbers.length;
 		return avg;
 	}
 	
