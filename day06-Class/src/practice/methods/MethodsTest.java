@@ -20,7 +20,17 @@ public class MethodsTest {
 		
 		double cel = methods.fahToCel(100.0);
 		System.out.println("cel=" + cel);
-
+		methods.birthYearMonth(1996, 8, "이권우");
+		methods.printNineNineTable(9);
+		int[] array = {1,2,3,4,5};
+		
+		methods.printNineNineTableArray(array);
+		System.out.println(methods.calcBmi(200.0,90.0)+"입니다.");
+		System.out.println("1과 2중 작은 수는"+methods.min(1,2));
+		System.out.println("1과 2중 큰 수는"+methods.max(1,2));
+		System.out.println("배열의 합은"+methods.sumOfArray(array));
+		System.out.println("배열의 합의 평균은"+methods.avgOfArray(array));
+		methods.adder(1, 2,'+');
 	}
 
 }
