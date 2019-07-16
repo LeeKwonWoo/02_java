@@ -1,5 +1,4 @@
 package practice.methods;
-
 public class Test {
 	public static void main(String[] args) {
 		MethodPractice practice = new MethodPractice();
@@ -21,9 +20,10 @@ public class Test {
 		System.out.println("Area = "+practice.calcCircleArea(3));
 		
 		// 6.
-		
-		for(int idx = 0; idx < practice.makeMultipleNums(5).length; idx++) {
-			System.out.printf("%d,",practice.makeMultipleNums(5)[idx]);
+		int[] array = new int[20];
+		array = practice.makeMultipleNums(5);
+		for(int idx = 0; idx < array.length; idx++) {
+			System.out.printf("%d,",array[idx]);
 		}
 	}
 	

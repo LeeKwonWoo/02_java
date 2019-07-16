@@ -11,7 +11,7 @@ public class MethodPractice {
 		int result = 0;
 		int count = 1;
 		
-		while(result <= 100) {
+		while(result < 100) {
 			result = x * count;	
 			System.out.printf("%d%n",result);
 			count++;
@@ -53,14 +53,15 @@ public class MethodPractice {
 		int count = 0;
 		
 		
-		while(result <= 100) {
+		while(result < 100) {
+			result = x * (count+1);
 			count++;
 		}
 		multiples = new int[count];
-		
-		while(result <= 100) {
-			
-			multiples[idx]= x * (idx+1);
+		result = 0;
+		while(result < 100) {
+			result = x * (idx+1);
+			multiples[idx]= result;
 			idx++;
 		}
 		
