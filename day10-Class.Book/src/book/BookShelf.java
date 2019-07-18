@@ -55,7 +55,7 @@ public class BookShelf {
 					newBooks[idx] = books[idx];
 				}
 			} else if(index == 0) {
-				for (int idx = 0; idx < books.length; idx++) {
+				for (int idx = 0; idx < books.length-1; idx++) {
 					newBooks[idx] = books[idx+1];
 				}
 			} else {
