@@ -12,17 +12,17 @@ package snack;
 public class OreoTest {
 
 	public static void main(String[] args) {
-		Oreo[] oreocookies = new Oreo[3];
-		oreocookies[0] = new Oreo("바닐라",3.0,1.0);
-		oreocookies[1] = new Oreo("초코",3.5,1.5);
-		oreocookies[2] = new Oreo("딸기",3.3,1.3);
-		for (Oreo oreo : oreocookies) {
+		Oreo[] oreoBox = new Oreo[3];
+		oreoBox[0] = new Oreo("바닐라",3.0,1.0);
+		oreoBox[1] = new Oreo("초코",3.5,1.5);
+		oreoBox[2] = new Oreo("딸기",3.3,1.3);
+		for (Oreo oreo : oreoBox) {
 			oreo.print();
 		}
-		for (int idx = 0; idx < oreocookies.length; idx++) {
-			oreocookies[idx].changeCream("바닐라");
+		for (int idx = 0; idx < oreoBox.length; idx++) {
+			oreoBox[idx].changeCream("바닐라");
 		}
-		for (Oreo oreo : oreocookies) {
+		for (Oreo oreo : oreoBox) {
 			oreo.print();
 		}
 	}
