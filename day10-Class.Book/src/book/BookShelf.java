@@ -61,12 +61,12 @@ public class BookShelf {
 			} else {
 				// 4. 폐기할 인덱스가 배열 중간일 때
 				// (1) 삭제할 책 앞쪽의 책정보는 같은 인덱스로 복사
-				for (int idx = 0; idx < books.length%index; idx++) {
+				for (int idx = 0; idx < index-1; idx++) {
 					newBooks[idx] = books[idx];
 				}
 				// (2) 삭제할 책 뒤쪽의 남는 책정보는 현재 인덱스 -1 위치로 복사
-				for (int idx = books.length%index+2; idx < books.length; idx++) {
-					newBooks[idx] = books[idx];
+				for (int idx = index; idx < books.length; idx++) {
+					newBooks[idx] = books[idx+1];
 				}
 			}
 			// 6. 남는 책이 복사된 새 배열을 this.books 에 저장
