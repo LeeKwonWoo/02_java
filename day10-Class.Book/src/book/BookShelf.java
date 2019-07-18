@@ -47,22 +47,22 @@ public class BookShelf {
 			// 3. 폐기 안할 책을 유지할 새 배열을 지금 배열 크기 -1 크기로 생성
 			newBooks = new Book[books.length-1];
 			// 4. 폐기할 인덱스가 배열 중간일 때
-			if(index/2 == books.length/2) {
-				// (1) 삭제할 책 앞쪽의 책정보는 같은 인덱스로 복사
-				for (int idx = 0; idx < books.length/2; idx++) {
-					newBooks[idx] = books[idx];
-				}
-				// (2) 삭제할 책 뒤쪽의 남는 책정보는 현재 인덱스 -1 위치로 복사
-				for (int idx = books.length/2; idx < books.length; idx++) {
-					newBooks[idx] = books[idx];
-				}
-			} 
+			
+			// (1) 삭제할 책 앞쪽의 책정보는 같은 인덱스로 복사
+			for (int idx = 0; idx <= books.length%index; idx++) {
+				newBooks[idx] = books[idx];
+			}
+			// (2) 삭제할 책 뒤쪽의 남는 책정보는 현재 인덱스 -1 위치로 복사
+			for (int idx = books.length%index; idx < books.length; idx++) {
+				newBooks[idx] = books[idx];
+			}
+			 
 			// 5. 폐기할 인덱스가 배열 끝일 때
-			else if (index == books.length-1) {
+			if (index == books.length-1) {
 //			    폐기할 책 인덱스 앞쪽까지만 새 배열에 복사
 				for (int idx = 0; idx < books.length-1; idx++) {
-					newBooks[idx] = books[idx];
-				}
+				newBooks[idx] = books[idx];
+			}
 			}
 			// 6. 남는 책이 복사된 새 배열을 this.books 에 저장
 			this.books = newBooks;
