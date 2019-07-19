@@ -163,6 +163,6 @@ public class Book {
 	
 	public void print() {
 		System.out.println("일련번호: "+sequence+" ISBN: "+isbn+" 제목:"+title+" 저자:"
-	                       +author+" 출판사:"+company+" 페이지수:"+totalPage+" 가격:"+price+" 재고수량:"+quantity);
+	                       +author+" 출판사:"+company+" 페이지:"+totalPage+" 가격:"+price+" 재고수량:"+quantity);
 	}
 }
