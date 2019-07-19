@@ -21,21 +21,29 @@ public class OreoTest {
 		box.add(choco);
 		box.add(strawberry);
 		box.add(greentea);
-		
+		System.out.println("----- 1. 모든 쿠키 출력 -----");
 		// 모두 출력
 		for (Oreo oreo : box.getAllOreo()) {
 			oreo.print();
 		}
+		System.out.println("----- 2. 초코 쿠키를 바닐라쿠키로 변경 -----");
 		// 초코쿠키를 바닐라로 변경 : set
-		box.set(choco);
-		// 변경된 초코쿠키 (1번쿠키) : get
-		box.get(choco);
 		
+		Oreo chOreo = new Oreo(1,"바닐라");
+		box.set(chOreo);
+		// 변경된 초코쿠키 (1번쿠키) : get
+		box.get(chOreo);
+		System.out.println("----- 2. 모든 쿠키 출력 -----");
+		for (Oreo oreo : box.getAllOreo()) {
+			oreo.print();
+		}
+		System.out.println("----- 3. 모든 쿠키 바닐라크림으로 변경 -----");
 		// 바닐라 크림변경후
 		for (Oreo oreo : box.getAllOreo()) {
 			oreo.changeCream("바닐라");
 		}
 		// 변경후 출력
+		System.out.println("----- 4. 모든 쿠키 출력 -----");
 		for (Oreo oreo : box.getAllOreo()) {
 			oreo.print();
 		}
