@@ -26,7 +26,6 @@ public class PointTest2 {
 		}
 		//다음 점과의 거리를 구해서 출력
 		for (int idx = 0; idx < points.length-1; idx++) {
-			
 			System.out.printf("두 점 points[%d] , points[%d]사이의 거리 : %5.2f%n",idx,idx+1,points[idx].distanceFrom(points[idx+1]));
 			System.out.printf("두 점 %s %s 사이의 거리: %5.2f%n",points[idx],points[idx+1],points[idx].distanceFrom(points[idx+1]));
 		}
